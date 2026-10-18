@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Egg Hatchery — Mochi's Game</title>
+  <meta name="description" content="Tap the egg to hatch a baby dino and fill your nursery shelf.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="egg" data-nav="projects.html" data-says="Tap the egg! 🥚|It's wobbling…|Who's inside?">
+<main id="main" class="wrap">
+  <div class="section-head" style="margin-top:10px">
+    <span class="eyebrow">Project 3</span>
+    <h1>Egg <span class="grad">Hatchery</span></h1>
+    <p>Tap the egg 5 times to help a baby dino hatch. Each one is different, and they live on your nursery shelf.</p>
+  </div>
+
+  <div class="hatch-stage">
+    <div id="eggZone">
+      <button class="egg" id="egg" type="button" data-nosound aria-label="Tap the egg to crack it">
+        <svg class="cracks" viewBox="0 0 100 133" aria-hidden="true">
+          <path d="M50 24 L44 38 L54 46" />
+          <path d="M54 46 L46 58 L58 66" />
+          <path d="M20 70 L34 74 L40 86 L52 84" />
+          <path d="M80 62 L68 70 L72 84 L60 92" />
+          <path d="M30 100 L44 104 L50 118 L62 112 L72 120" />
+        </svg>
+      </button>
+      <div class="progress-dots" id="dotsRow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <p id="eggHint">Tap the egg!</p>
+    </div>
+
+    <div class="reveal" id="reveal" hidden>
+      <div id="newRex" data-rex></div>
+      <h2 id="newName" style="margin-top:10px">Hello!</h2>
+      <p id="newTrait"></p>
+      <button class="btn" id="againBtn" type="button">Hatch another 🥚</button>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-head"><span class="eyebrow">Nursery shelf</span><h2>Your hatchlings (<span id="count">0</span>)</h2></div>
+    <div class="shelf" id="shelf"></div>
+    <p id="emptyShelf" style="text-align:center">Nothing here yet. Go hatch someone!</p>
+  </section>
+
+  <div style="text-align:center;margin-top:34px"><a class="btn alt" href="projects.html">← Back to projects</a></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/egg-hatchery.js"></script>
+</body>
+</html>

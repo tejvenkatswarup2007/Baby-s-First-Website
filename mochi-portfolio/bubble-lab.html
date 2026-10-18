@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubble Pop Lab — Mochi's Game</title>
+  <meta name="description" content="Pop as many bubbles as you can in 30 seconds.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="bubble" data-nav="projects.html" data-says="Pop pop pop! 🫧|Golden bubbles give extra time ⭐|Beat your best score!">
+<main id="main" class="wrap">
+  <div class="section-head" style="margin-top:10px">
+    <span class="eyebrow">Project 1</span>
+    <h1>Bubble <span class="grad">Pop</span> Lab</h1>
+    <p>Tap or click bubbles before they float away. Golden ⭐ bubbles give +3 seconds!</p>
+  </div>
+
+  <div class="hud">
+    <div class="stat">Score<b id="score">0</b></div>
+    <div class="stat">Time<b id="time">30</b></div>
+    <div class="stat">Best<b id="best">0</b></div>
+  </div>
+
+  <div class="arena" id="arena">
+    <div class="arena-msg" id="overlay">
+      <div>
+        <h2 id="ovTitle">Ready?</h2>
+        <p id="ovText">You have 30 seconds. Pop everything!</p>
+        <button class="btn" id="startBtn" type="button">Start popping 🫧</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:34px" class="btn-row">
+    <a class="btn alt" href="projects.html" style="margin:0 auto">← Back to projects</a>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/bubble-lab.js"></script>
+</body>
+</html>

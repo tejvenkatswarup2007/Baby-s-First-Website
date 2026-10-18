@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mochi's Guestbook — Leave a Note</title>
+  <meta name="description" content="Sign Mochi's guestbook and leave a message or a dream wish.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="guestbook" data-says="Leave me a message! 💌|I read every single one.|Make a wish!">
+<main id="main" class="wrap">
+  <div class="section-head" style="margin-top:10px">
+    <span class="eyebrow">Sign the wall</span>
+    <h1>Mochi's <span class="grad">guestbook</span></h1>
+    <p>Leave a message or a dream wish for the baby. It gets pinned to the wall!</p>
+  </div>
+
+  <div class="gb-grid">
+    <form class="card" id="gbForm" autocomplete="off">
+      <h3>Write a note ✏️</h3>
+      <label class="field">Your name
+        <input type="text" id="gbName" maxlength="20" placeholder="Sleepy Cloud" required>
+      </label>
+      <label class="field">Your message or wish
+        <textarea id="gbMsg" maxlength="140" placeholder="I wish for a rainbow made of pancakes…" required></textarea>
+      </label>
+      <fieldset style="border:0;padding:0;margin:0 0 16px">
+        <legend class="field" style="margin:0">Pick a sticker</legend>
+        <div class="stickers" id="gbStickers"></div>
+      </fieldset>
+      <button class="btn" type="submit">Pin it! 📌</button>
+      <p style="font-size:.85rem;opacity:.8;margin:14px 0 0" id="gbCount"></p>
+    </form>
+
+    <div>
+      <div class="notes" id="gbNotes" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/guestbook.js"></script>
+</body>
+</html>

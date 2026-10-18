@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roar Box — Mochi's Music Box</title>
+  <meta name="description" content="A tiny music box and roar machine made with the Web Audio API.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="roar" data-nav="projects.html" data-no-mascot>
+<main id="main" class="wrap">
+  <div class="section-head" style="margin-top:10px">
+    <span class="eyebrow">Project 2</span>
+    <h1>Roar <span class="grad">Box</span></h1>
+    <p>Tap the pads (or press keys <b>1–8</b>) to play notes. Sound is on: use 🔊 in the header to mute.</p>
+  </div>
+
+  <div class="stage">
+    <div class="hero-art" style="padding-top:0"><div id="boxRex" data-rex data-hue="0"></div></div>
+    <div>
+      <div class="notes-trail" id="trail" aria-live="off"></div>
+      <div class="pads" id="pads"></div>
+      <div class="rb-btns">
+        <button class="btn" id="lullabyBtn" type="button" data-nosound>🌙 Play lullaby</button>
+        <button class="btn alt" id="roarBtn" type="button" data-nosound>🦖 ROAR!</button>
+        <button class="btn alt" id="giggleBtn" type="button" data-nosound>😄 Giggle</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:34px"><a class="btn alt" href="projects.html">← Back to projects</a></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/roar-box.js"></script>
+</body>
+</html>

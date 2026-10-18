@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Mochi — Character Sheet</title>
+  <meta name="description" content="Mochi's character sheet: name, species, job, story and tagline.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="about" data-says="That's me on the left! 👈|Tiny arms, giant ideas!|Tap the cards to flip them!">
+<main id="main" class="wrap">
+
+  <section class="about-hero">
+    <div class="hero-art"><div data-rex data-hue="0"></div></div>
+    <div>
+      <span class="eyebrow">Character sheet</span>
+      <h1>About <span class="grad">Mochi</span></h1>
+      <p class="lead">Everything you need to know about the smallest builder in Sprinkle Valley.</p>
+      <div class="btn-row">
+        <button class="btn" id="hearRoar" type="button" data-nosound>🔊 Hear my roar</button>
+        <a class="btn alt" href="story.html">Read my story 📖</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="sheetTitle">
+    <div class="section-head"><span class="eyebrow">The 5-point sheet</span><h2 id="sheetTitle">Meet the baby</h2></div>
+    <div class="sheet">
+      <div class="card"><span class="num">1</span><h3>Name</h3><p><b>Mochi</b>, named after the squishy rice cake he's shaped like. Friends call him Mo.</p></div>
+      <div class="card"><span class="num">2</span><h3>What he is</h3><p>A baby T-Rex, three egg-years old. Mint-green, round as a dumpling, with a pink blush, a tail that wags on its own and half an eggshell worn as a hat. Curious, giggly, clumsy and very kind. His roar sounds like a squeaky toy.</p></div>
+      <div class="card"><span class="num">3</span><h3>What he does</h3><p>Junior Bubble Engineer at the Sprinkle Valley Workshop. He builds toys, games, sounds and tiny worlds that make people smile, and every button is extra big so tiny arms can reach it.</p></div>
+      <div class="card"><span class="num">4</span><h3>His story</h3><p>Hatched from a giant egg in a meadow of marshmallow clouds. His arms were too short for the world's buttons, so he started inventing a new one. He's still hatching new ideas every day.</p></div>
+      <div class="card"><span class="num">5</span><h3>Tagline</h3><p class="big-quote">“Tiny arms, giant ideas!”</p></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="quirkTitle">
+    <div class="section-head"><span class="eyebrow">Quirks</span><h2 id="quirkTitle">Things about Mochi</h2></div>
+    <div class="chips" style="justify-content:center">
+      <span class="chip">🥚 Never takes off his eggshell hat</span>
+      <span class="chip">🍪 Collects fossil cookies</span>
+      <span class="chip">🫧 Hiccups bubbles when excited</span>
+      <span class="chip">🦶 Stomps in rhythm when happy</span>
+      <span class="chip">😴 Naps in the middle of sentences</span>
+      <span class="chip">🌈 Afraid of nothing except tickles</span>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="wallTitle">
+    <div class="section-head"><span class="eyebrow">Nursery wall</span><h2 id="wallTitle">Mochi's growth chart</h2><p>How tall have his skills grown?</p></div>
+    <!-- EDIT these levels to match your own real skills! -->
+    <div class="wall">
+      <div class="skill"><span>HTML</span><div class="bar" style="--lvl:90%"><i></i></div><span>90%</span></div>
+      <div class="skill"><span>CSS</span><div class="bar" style="--lvl:85%"><i></i></div><span>85%</span></div>
+      <div class="skill"><span>JavaScript</span><div class="bar" style="--lvl:75%"><i></i></div><span>75%</span></div>
+      <div class="skill"><span>Web Audio</span><div class="bar" style="--lvl:60%"><i></i></div><span>60%</span></div>
+      <div class="skill"><span>SVG art</span><div class="bar" style="--lvl:80%"><i></i></div><span>80%</span></div>
+      <div class="skill"><span>Hugging</span><div class="bar" style="--lvl:100%"><i></i></div><span>100%</span></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="flipTitle">
+    <div class="section-head"><span class="eyebrow">Tap to flip</span><h2 id="flipTitle">Fun facts</h2></div>
+    <div class="flips">
+      <button class="flip" type="button"><span class="flip-in"><span class="face front" style="--c:#ffd1dc">🍰<small>Favourite food</small></span><span class="face back">Strawberry cake with extra sprinkles. He eats the sprinkles first.</span></span></button>
+      <button class="flip" type="button"><span class="flip-in"><span class="face front" style="--c:#c4f1be">🎶<small>Favourite sound</small></span><span class="face back">The "plink" of a music box. It makes his tail wag in time.</span></span></button>
+      <button class="flip" type="button"><span class="flip-in"><span class="face front" style="--c:#b8e0ff">🏠<small>Home</small></span><span class="face back">A cosy workshop under a giant mushroom in Sprinkle Valley.</span></span></button>
+      <button class="flip" type="button"><span class="flip-in"><span class="face front" style="--c:#fff3b0">🤫<small>Secret</small></span><span class="face back">His eggshell hat is hiding a secret. Tap it five times and see!</span></span></button>
+    </div>
+  </section>
+
+  <div style="text-align:center;margin-top:56px"><a class="btn" href="projects.html">See what Mochi made 🧸</a></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/about.js"></script>
+</body>
+</html>

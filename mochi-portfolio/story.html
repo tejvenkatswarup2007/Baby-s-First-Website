@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mochi's Story — From Egg to Engineer</title>
+  <meta name="description" content="A scroll-driven picture story of how Mochi the baby T-Rex hatched and became a builder.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="story" data-no-mascot>
+<div class="story-bg" id="storyBg" aria-hidden="true"></div>
+<main id="main" class="wrap" style="padding-bottom:110px">
+  <div class="section-head" style="margin-top:10px">
+    <span class="eyebrow">Origin story</span>
+    <h1>How <span class="grad">Mochi</span> began</h1>
+    <p>Scroll down slowly. Mochi will walk along the bottom of the page. ⬇️</p>
+  </div>
+
+  <section class="scene-s" data-bg="linear-gradient(#ffe9c2,#ffc9dc)">
+    <div class="s-art"><span class="crack-egg">🥚</span><span class="float-e" style="top:6%;left:8%">☁️</span><span class="float-e" style="bottom:8%;right:10%;animation-delay:-2s">☁️</span></div>
+    <div class="s-text"><div class="card"><span class="step">Scene 1</span><h2>A very big egg</h2><p>Long ago, in a meadow of marshmallow clouds, a very big egg sat very still. Inside, something tiny was humming a tune.</p></div></div>
+  </section>
+
+  <section class="scene-s" data-bg="linear-gradient(#ffe9a8,#ffcfa8)">
+    <div class="s-art"><div class="rex-slot" data-rex data-hue="0"></div><span class="float-e" style="top:2%;left:10%">💥</span><span class="float-e" style="top:10%;right:8%;animation-delay:-1s">✨</span></div>
+    <div class="s-text"><div class="card"><span class="step">Scene 2</span><h2>Crack!</h2><p>One sunny morning: crack, crack, CRACK! Out tumbled Mochi, wearing half the shell as a hat. “Rawr?” he said. It came out as a squeak.</p></div></div>
+  </section>
+
+  <section class="scene-s" data-bg="linear-gradient(#cfeaff,#e7dcff)">
+    <div class="s-art"><span>⌨️</span><span class="float-e" style="top:4%;right:12%">🤏</span><span class="float-e" style="bottom:6%;left:8%;animation-delay:-2s">❓</span></div>
+    <div class="s-text"><div class="card"><span class="step">Scene 3</span><h2>The tiny-arm problem</h2><p>Mochi wanted to type, paint and ring the doorbell. His arms did not reach. So he invented extra-big buttons, bouncy pads and tools you can use with a roar.</p></div></div>
+  </section>
+
+  <section class="scene-s" data-bg="linear-gradient(#c4f1be,#fff3b0)">
+    <div class="s-art"><span>🍄</span><span class="float-e" style="top:2%;left:12%">🐌</span><span class="float-e" style="top:12%;right:6%;animation-delay:-1s">🐸</span><span class="float-e" style="bottom:4%;right:20%;animation-delay:-2s">☁️</span></div>
+    <div class="s-text"><div class="card"><span class="step">Scene 4</span><h2>Sprinkle Valley</h2><p>Neighbours came to see: a shy snail, a sleepy cloud and a very loud frog. Mochi built a toy for each of them, and soon the whole valley was giggling.</p></div></div>
+  </section>
+
+  <section class="scene-s" data-bg="linear-gradient(#2b2a63,#6a4a9a)">
+    <div class="s-art"><div class="rex-slot" data-rex data-hue="20"></div><span class="float-e" style="top:2%;right:10%">🌙</span><span class="float-e" style="top:20%;left:6%;animation-delay:-1.5s">⭐</span></div>
+    <div class="s-text"><div class="card"><span class="step">Scene 5</span><h2>Still hatching</h2><p>Every day Mochi learns something new. Tomorrow? A bigger bubble. Maybe a rocket. He's still hatching, and you're invited.</p><div class="btn-row"><a class="btn" href="projects.html">Play with my toys 🧸</a><a class="btn alt" href="guestbook.html">Say hi 💌</a></div></div></div>
+  </section>
+</main>
+
+<div class="story-progress" aria-hidden="true">
+  <div class="fill" id="storyFill"></div>
+  <div class="marker" id="storyMarker" data-rex data-hue="0"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="js/rex.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages/story.js"></script>
+</body>
+</html>
